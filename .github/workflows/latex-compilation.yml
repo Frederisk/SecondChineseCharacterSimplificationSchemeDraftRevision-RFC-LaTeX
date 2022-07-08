@@ -1,0 +1,29 @@
+---
+name: LaTeX Compilation
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  build_latex:
+    name: Build LaTeX
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Compile LaTeX with latexmk
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: remaster.tex
+          extra_fonts: |-
+            ./fonts/BabelStone/*.ttf
+            ./fonts/Sim/*.ttf
+          args: >-
+            -synctex=1
+            -file-line-error
+            -interaction=nonstopmode
+            -xelatex
+...
