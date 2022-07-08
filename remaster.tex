@@ -1,0 +1,63 @@
+\documentclass[12pt, fontset=none, UTF8, AutoFakeBold]{ctexbook}
+
+\usepackage[outline]{contour}
+
+\usepackage{geometry}
+    \geometry{a4paper, centering, top=2.54cm, bottom=2.54cm, left=1.27cm, right=2.54cm}
+
+\usepackage{xeCJK}
+    \setCJKmainfont[
+        ItalicFont=FangSong
+    ]{BabelStone Han}
+    % \ctexset{section={name={,、}, number={\chinese{section}}}}
+
+\usepackage{setspace}
+    \renewcommand{\baselinestretch}{1.75}
+
+\usepackage{fancyhdr} % page header and footer
+    \pagestyle{fancy}
+    % \fancyhf{}
+    \fancyhead[]{}
+    \renewcommand{\headrule}{} % no header rule
+    \fancyfoot[C]{--~\thepage~--}
+
+\usepackage{titlesec}
+    \titleformat{\section}{\centering\Large}{\chinese{section}、}{0pt}{}
+
+\newcommand{\raisesymbol}[1]{\raise1.3pt\hbox{#1}}
+
+\begin{document}
+\begin{titlepage}
+    % \thispagestyle{empty}
+    \begin{center}
+        \huge
+        \vspace*{3cm}
+        \textbf{第二次汉字简化方案修订草案}\par
+        % \vspace*{0.5cm}
+        \textbf{征\ 求\ 意\ 见\ 表}\par
+        % \textbf{第二次汉字简化方案修订草案}\par
+        % \textbf{征求意见表}
+        \vspace*{2.5cm}
+        \Large
+        说\qquad{}明\par
+    \end{center}
+
+    《第二次汉字简化方案（草案）》于1977年12月发表后，在全国范围征求了意见，26个省市自治区以及部队系统将征集到的意见综合整理后寄给了我们。由于这个草案制定得不够妥善，各方人士也提了不少批评意见。根据充实和加强后的中国文字改革委员会第一次全体会议决定，对这个草案进行了较大的修改，作成《修订草案》，现在再一次印发征求意见。
+
+    原草案共收整体简化字462个，经过修订，现减为111个。其中不作简化偏旁用的简化字91个，可作简化偏旁用的简化字20个。《修订草案》保留了原草案的简化字79个，修改简化形体的27个。另外，补充简化了5个字。
+
+    征求意见表分原字、简作、和意见三栏，后面附「说明」一栏，主要讲简化字的选取理由，以及对原草案作了哪些修改等，供参考。
+
+    填写意见时请注意：你赞成的简化字，就在「意见」栏画个「\raisesymbol{$\bigcirc$}」，不赞成的就画个「\raisesymbol{$\times$}」。
+
+    \begin{center}
+        \Large
+        \vspace*{1.5cm}
+        \textit{中\ 国\ 文\ 字\ 改\ 革\ 委\ 员\ 会}\par
+        \textit{１９８１年８月}
+    \end{center}
+\end{titlepage}
+
+% \section{}
+
+\end{document}
